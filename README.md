@@ -22,7 +22,7 @@ This project was created for practicing and improving front-end web development 
 
 ## Live Demo
 
-Add your GitHub Pages link here.
+https://shehjadnoor.github.io/Spendly/
 
 ## Developer
 
