@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Spendly</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div id="loginPage" class="login-page">
+
+<div class="login-box">
+
+<img src="image(10).png" class="logo">
+
+<h1>Spendly</h1>
+
+<input type="email" id="email" placeholder="Enter Email">
+
+<input type="password" id="password" placeholder="Enter Password">
+
+<div class="show-password">
+
+<input type="checkbox" id="showPass">
+
+<label for="showPass">Show Password</label>
+
+</div>
+
+<button onclick="login()">Login</button>
+
+<p id="loginMessage"></p>
+
+</div>
+
+</div>
+
+<div id="mainPage">
+
+<nav>
+
+<h2><img src="image(10).png" style="height:32px;vertical-align:middle;margin-right:8px;"> Spendly</h2>
+
+<div>
+
+<button onclick="toggleDarkMode()">🌙 Mode</button>
+
+<button onclick="logout()">Logout</button>
+
+</div>
+
+</nav>
+
+<div class="banner-box">
+  <img src="image(10).png" style="width:90px; margin-bottom:15px; border-radius:14px;">
+  <h1>Spendly</h1>
+  <p>Smart Personal Finance Tracker</p>
+</div>
+
+<div class="summary-container">
+
+<div class="card income-card">
+
+<h3>Total Income</h3>
+
+<h2 id="income">৳0</h2>
+
+</div>
+
+<div class="card expense-card">
+
+<h3>Total Expense</h3>
+
+<h2 id="expense">৳0</h2>
+
+</div>
+
+<div class="card balance-card">
+
+<h3>Balance</h3>
+
+<h2 id="balance">৳0</h2>
+
+</div>
+
+</div>
+
+<div class="form-box">
+
+<h2>Add Transaction</h2>
+
+<form id="transactionForm">
+
+<input type="text" id="title" placeholder="Transaction Title">
+
+<input type="number" id="amount" placeholder="Amount">
+
+<select id="category">
+
+<option value="">Select Category</option>
+
+<option>Food</option>
+
+<option>Shopping</option>
+
+<option>Transport</option>
+
+<option>Salary</option>
+
+<option>Other</option>
+
+</select>
+
+<div class="radio-box">
+
+<label>
+
+<input type="radio" name="type" value="Income">
+
+Income
+
+</label>
+
+<label>
+
+<input type="radio" name="type" value="Expense" checked>
+
+Expense
+
+</label>
+
+</div>
+
+<div class="checkbox-box">
+
+<label>
+
+<input type="checkbox" id="important">
+
+Important
+
+</label>
+
+</div>
+
+<button type="submit">Add Transaction</button>
+
+</form>
+
+<p id="formMessage"></p>
+
+</div>
+
+<button class="toggle-btn" onclick="toggleTransactions()">
+
+Show / Hide Transactions
+
+</button>
+
+<div id="transactionList"></div>
+
+<h3 class="counter">
+
+Total Transactions:
+<span id="counter">0</span>
+
+</h3>
+
+<div class="converter">
+
+<h2>Currency Converter API</h2>
+
+<input type="number" id="usdAmount" placeholder="USD Amount">
+
+<button onclick="convertCurrency()">
+
+Convert USD to BDT
+
+</button>
+
+<h3 id="convertedAmount"></h3>
+
+</div>
+
+<footer>
+
+<p>© 2026 Spendly</p>
+
+<p>Developed By Team Abstract Avengers</p>
+
+</footer>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
